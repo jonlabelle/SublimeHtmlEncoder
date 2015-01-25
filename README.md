@@ -18,16 +18,29 @@ A [Sublime Text](http://www.sublimetext.com) plug-in to encode and decode [HTML 
 
 ## Install
 
+### Compatibility
+
+Sublime HTML Encoder is compatible with Sublime Text 2 and 3, and all Operating Systems.
+
+### Download
+
 Download the [zip](https://github.com/jonlabelle/SublimeHtmlDecode/archive/master.zip)
 to your Sublime Text **Packages** directory.
 
 ## Usage
 
 HTML Decode and Encode commands can be accessed from the Sublime
-Text command palette:
+Text **Command Palette** and **Menu Menu**.
+
+**Command Palette:**
 
 - `ctrl/cmd + shift + P` : ***HTML Encode***
 - `ctrl/cmd + shift + P` : ***HTML Decode***
+
+**Main Menu:**
+
+- `Edit` -> `Text` : ***HTML Encode***
+- `Edit` -> `Text` : ***HTML Decode***
 
 ## Author
 
