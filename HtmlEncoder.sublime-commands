@@ -1,0 +1,4 @@
+[
+	{ "caption": "HTML Decode", "command": "html_decode" },
+	{ "caption": "HTML Encode", "command": "html_encode" }
+]
