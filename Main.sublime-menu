@@ -1,0 +1,32 @@
+[
+	{
+		"caption":"Edit",
+		"mnemonic":"E",
+		"id":"edit",
+		"children":[
+			{
+				"caption":"Text",
+				"mnemonic":"TE",
+				"id":"text",
+				"children":[
+					{
+						"caption":"-"
+					},
+					{
+						"command":"html_decode",
+						"id":"html-decode",
+						"caption":"HTML Decode"
+					},
+					{
+						"command":"html_encode",
+						"id":"html-encode",
+						"caption":"HTML Encode"
+					},
+					{
+						"caption":"-"
+					}
+				]
+			}
+		]
+	}
+]
