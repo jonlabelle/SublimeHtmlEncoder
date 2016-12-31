@@ -42,10 +42,10 @@ class HtmlDecodeCommand(sublime_plugin.TextCommand):
                 decoded_text = self.decode_html(source_text)
 
         if source_text == decoded_text:
-            sublime.set_timeout(lambda: sublime.status_message('Nothing to decode.'), 0)
+            sublime.set_timeout(lambda: sublime.status_message('HTML Encoder: Nothing to decode.'), 0)
         else:
             view.replace(edit, region, decoded_text)
-            sublime.set_timeout(lambda: sublime.status_message('HTML Decoded.'), 0)
+            sublime.set_timeout(lambda: sublime.status_message('HTML Encoder: HTML Decoded.'), 0)
 
 
 class HtmlEncodeCommand(sublime_plugin.TextCommand):
@@ -79,7 +79,7 @@ class HtmlEncodeCommand(sublime_plugin.TextCommand):
                 encoded_text = self.encode_html(source_text)
 
         if source_text == encoded_text:
-            sublime.set_timeout(lambda: sublime.status_message('Nothing to encode.'), 0)
+            sublime.set_timeout(lambda: sublime.status_message('HTML Encoder: Nothing to encode.'), 0)
         else:
             view.replace(edit, region, encoded_text)
-            sublime.set_timeout(lambda: sublime.status_message('HTML Encoded.'), 0)
+            sublime.set_timeout(lambda: sublime.status_message('HTML Encoder: HTML Encoded.'), 0)
