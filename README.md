@@ -1,5 +1,7 @@
 # Sublime HTML Encoder
 
+[![Build Status](https://travis-ci.org/jonlabelle/SublimeHtmlEncoder.svg?branch=master)](https://travis-ci.org/jonlabelle/SublimeHtmlEncoder)
+
 A [Sublime Text](http://www.sublimetext.com) plug-in to encode and decode [HTML character entities](http://dev.w3.org/html5/html-author/charref).
 
 ## Examples
