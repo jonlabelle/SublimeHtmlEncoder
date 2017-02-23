@@ -15,35 +15,35 @@ def selections(view, default_to_all=True):
     return regions
 
 
-def encode_html(txt):
+def encode_html(source):
     if PY_MAJOR_VER >= 3:
         from html import escape
-        return escape(txt)
+        return escape(source)
     else:
         # use saxutils escape for python 2
         from xml.sax.saxutils import escape
         html_escape_table = {'"': "&quot;", "'": "&apos;"}
-        txt = escape(txt, html_escape_table)
-        txt = txt.decode('utf-8')
-        txt = txt.encode('ascii', 'xmlcharrefreplace')
-        return txt
+        source = escape(source, html_escape_table)
+        source = source.decode('utf-8')
+        source = source.encode('ascii', 'xmlcharrefreplace')
+        return source
 
 
-def decode_html(txt):
+def decode_html(source):
     # Use unescape from py standard lib
     # see: http://stackoverflow.com/questions/2087370
     if PY_MAJOR_VER == 2:
         # python 2
         from HTMLParser import HTMLParser
-        return HTMLParser().unescape(txt)
+        return HTMLParser().unescape(source)
     elif PY_MAJOR_VER == 3 and PY_MINOR_VER <= 3:
         # python 3
         from html.parser import HTMLParser
-        return HTMLParser().unescape(txt)
+        return HTMLParser().unescape(source)
     else:
         # python 3.4+
         from html import unescape
-        return unescape(txt)
+        return unescape(source)
 
 
 class HtmlDecodeCommand(sublime_plugin.TextCommand):
