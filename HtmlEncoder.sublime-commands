@@ -1,4 +1,4 @@
 [
-	{ "caption": "HTML Decode", "command": "html_decode" },
-	{ "caption": "HTML Encode", "command": "html_encode" }
+	{ "caption": "HtmlEncoder: Decode HTML", "command": "html_decode" },
+	{ "caption": "HtmlEncoder: Encode HTML", "command": "html_encode" }
 ]

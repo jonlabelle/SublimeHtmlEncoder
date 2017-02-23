@@ -1,29 +1,29 @@
 [
 	{
-		"caption":"Edit",
-		"mnemonic":"E",
-		"id":"edit",
-		"children":[
+		"caption": "Edit",
+		"mnemonic": "E",
+		"id": "edit",
+		"children": [
 			{
-				"caption":"Text",
-				"mnemonic":"TE",
-				"id":"text",
-				"children":[
+				"caption": "Text",
+				"mnemonic": "TE",
+				"id": "text",
+				"children": [
 					{
-						"caption":"-"
+						"caption": "-"
 					},
 					{
-						"command":"html_decode",
-						"id":"html-decode",
-						"caption":"HTML Decode"
+						"command": "html_decode",
+						"id": "html-decode",
+						"caption": "HTML Decode"
 					},
 					{
-						"command":"html_encode",
-						"id":"html-encode",
-						"caption":"HTML Encode"
+						"command": "html_encode",
+						"id": "html-encode",
+						"caption": "HTML Encode"
 					},
 					{
-						"caption":"-"
+						"caption": "-"
 					}
 				]
 			}
